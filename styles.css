@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url("https://w.wallhaven.cc/full/d6/wallhaven-d6y12l.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Logo on left, links on right */
+    align-items: center;
+    background-color: transparent;
+    padding: 15px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    color: white;
+    z-index: 1000;
+  }
+  
+  .nav-logo {
+    width: 50px;  
+    height: 50px;      
+    border-radius: 50%; 
+    object-fit: cover; 
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #f39c12;
+  }
+  
+
+.About {
+    padding-top: 200px;
+    color: azure;
+}
+
+section {
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+}
+
+
+/* Socials section */
+#socials {
+    height: 100vh; /* Full screen height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 10px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-links a i {
+    margin-right: 8px;
+    font-size: 24px;
+}
+
+.social-links a:hover {
+    color: #f39c12;
+}
+
+/* Achievments */
+#achievements {
+    height: 100vh; /* Full screen height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.achievements-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    font-size: 16px; /* Smaller text */
+}
+
+.achievements-list li {
+    margin: 8px 0;
+    font-size: 18px;
+}
+
+.achievements-list li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    position: relative;
+    display: inline-block;
+    padding: 5px 0;
+}
+
+.achievements-list li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #f39c12; /* Golden color */
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.achievements-list li a:hover {
+    color: #f39c12; /* Golden color */
+}
+
+.achievements-list li a:hover::after {
+    transform: scaleX(1);
+}
+
+
+
+
+/* About Section Styles */
+#about {
+    color: #f1f1f1;
+    padding: 30px 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    display: block;
+}
+
+#about h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.rem;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #ffffff;
+}
+
+#about p a {
+    color: #ff5733;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#about p a:hover {
+    text-decoration: underline;
+}
+
+
